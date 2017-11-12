@@ -50,11 +50,38 @@ plotdata = {"batchsize":[], "loss":[], "error":[]}
 
 
 
+tf = np.split(training_features,num_minibatches)
+
+print("Number of mini batches")
+print(len(tf))
+
+print("The shape of the training feature minibatch")
+print(tf[0].shape)
+
+tl = np.split(training_labels, num_minibatches)
+
+# It is key that we make only one pass through the data linearly in time
+num_passes = 1
+
+# Defines a utility that prints the training progress
+def print_training_progress(trainer, mb, frequency, verbose=1):
+    training_loss = "NA"
+    eval_error = "NA"
+    if mb%frequency == 0:
+        training_loss = trainer.previous_minibatch_loss_average
+        eval_error = trainer.previous_minibatch_evaluation_average
+        if verbose:
+            print ("Minibatch: {0}, Loss: {1:.4f}, Error: {2:.2f}%".format(mb, training_loss, eval_error*100))
+    return mb, training_loss, eval_error
+
+
 # Train our neural network
 tf = np.split(training_features,num_minibatches)
 print np.shape(training_features)
 tl = np.split(training_labels, num_minibatches)
 print np.shape(training_labels)
+
+
 for i in range(num_minibatches*num_passes): # multiply by the
     features = np.ascontiguousarray(tf[i%num_minibatches])
     labels = np.ascontiguousarray(tl[i%num_minibatches])
