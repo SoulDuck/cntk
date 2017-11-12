@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial_3/input.py" afterPath="$PROJECT_DIR$/tutorial_3/input.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial_3/training.py" afterPath="$PROJECT_DIR$/tutorial_3/training.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +30,9 @@
       <file leaf-file-name="training.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial_3/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-              <folding>
-                <element signature="e#23#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-380">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,8 +86,8 @@
         <option value="$PROJECT_DIR$/tutorial_3.py" />
         <option value="$PROJECT_DIR$/input/input.py" />
         <option value="$PROJECT_DIR$/input/training.py" />
-        <option value="$PROJECT_DIR$/tutorial_3/training.py" />
         <option value="$PROJECT_DIR$/tutorial_3/input.py" />
+        <option value="$PROJECT_DIR$/tutorial_3/training.py" />
       </list>
     </option>
   </component>
@@ -326,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510484275919</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add tutorial_3">
+      <created>1510484426869</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1510484426869</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -414,11 +418,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_3/training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-          <folding>
-            <element signature="e#23#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-380">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
