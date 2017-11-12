@@ -6,6 +6,13 @@ import cntk as C
 import cntk.tests.test_utils
 cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build system)
 C.cntk_py.set_fixed_random_seed(1) # fix a random seed for CNTK components
+try:
+    import matplotlib
+    import matplotlib.pyplot as plt
+except Exception as e:
+    if "DISPLAY" not in os.environ:
+        # remove Travis CI Error
+        matplotlib.use('Agg')
 
 #Lets build the network
 num_days_back = 8 # 이게 input py에서 가져온거다. 8일 전까지 확인 하기 때문에...
@@ -102,13 +109,6 @@ for i in range(epoch): # multiply by the
         plotdata["loss"].append(loss)
         plotdata["error"].append(error)
 
-try:
-    import matplotlib
-    import matplotlib.pyplot as plt
-except Exception as e:
-    if "DISPLAY" not in os.environ:
-        # remove Travis CI Error
-        matplotlib.use('Agg')
 
 
 
