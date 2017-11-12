@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import input_stock_data
+import numpy as np
 import cntk as C
 import cntk.tests.test_utils
 cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build system)
@@ -47,3 +48,20 @@ training_progress_output_freq = 1
 # Visualize the loss over minibatch
 plotdata = {"batchsize":[], "loss":[], "error":[]}
 
+
+
+# Train our neural network
+tf = np.split(training_features,num_minibatches)
+tl = np.split(training_labels, num_minibatches)
+
+for i in range(num_minibatches*num_passes): # multiply by the
+    features = np.ascontiguousarray(tf[i%num_minibatches])
+    labels = np.ascontiguousarray(tl[i%num_minibatches])
+
+    # Specify the mapping of input variables in the model to actual minibatch data to be trained with
+    trainer.train_minibatch({input : features, label : labels})
+    batchsize, loss, error = print_training_progress(trainer, i, training_progress_output_freq, verbose=1)
+    if not (loss == "NA" or error =="NA"):
+        plotdata["batchsize"].append(batchsize)
+        plotdata["loss"].append(loss)
+        plotdata["error"].append(error)
