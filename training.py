@@ -49,7 +49,8 @@ training_progress_output_freq = 1
 plotdata = {"batchsize":[], "loss":[], "error":[]}
 
 
-
+##### Training #####
+print np.shape(training_features)
 tf = np.split(training_features,num_minibatches)
 
 print("Number of mini batches")
