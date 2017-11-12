@@ -137,7 +137,7 @@ def make_stock_input():
     training_labels = np.asarray(training_data[["next_day", "next_day_opposite"]], dtype="float32")
 
     ############################################# Make Model ###################################################
-    return training_features , training_labels , test_data
+    return training_features , training_labels ,training_data , test_data
 
 
 if __name__ =='__main__':

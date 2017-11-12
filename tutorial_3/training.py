@@ -35,3 +35,14 @@ loss = C.cross_entropy_with_softmax(z, label)
 label_error = C.classification_error(z, label)
 lr_per_minibatch = C.learning_rate_schedule(0.125,C.UnitType.minibatch)
 trainer = C.Trainer(z, (loss, label_error), [C.sgd(z.parameters, lr=lr_per_minibatch)])
+
+training_features, training_labels, test_data=input.make_stock_input()
+#Initialize the parameters for the trainer, we will train in large minibatches in sequential order
+minibatch_size = 100
+num_minibatches = len(training_data.index) // minibatch_size
+
+#Run the trainer on and perform model training
+training_progress_output_freq = 1
+
+# Visualize the loss over minibatch
+plotdata = {"batchsize":[], "loss":[], "error":[]}
