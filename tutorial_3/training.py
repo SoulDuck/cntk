@@ -1,6 +1,11 @@
 # -*- coding:utf-8 -*-
 import input
- #Lets build the network
+import cntk as C
+import cntk.tests.test_utils
+cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build system)
+C.cntk_py.set_fixed_random_seed(1) # fix a random seed for CNTK components
+
+#Lets build the network
 num_days_back = 8 # 이게 input py에서 가져온거다. 8일 전까지 확인 하기 때문에...
 input_dim = 2 + num_days_back
 num_output_classes = 2 #Remember we need to have 2 since we are trying to classify if the market goes up or down 1 hot encoded
