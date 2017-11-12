@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 import input
-
 import cntk as C
 import cntk.tests.test_utils
 cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build system)
@@ -36,7 +35,7 @@ loss = C.cross_entropy_with_softmax(z, label)
 label_error = C.classification_error(z, label)
 lr_per_minibatch = C.learning_rate_schedule(0.125,C.UnitType.minibatch)
 trainer = C.Trainer(z, (loss, label_error), [C.sgd(z.parameters, lr=lr_per_minibatch)])
-
+print 'a'
 training_features, training_labels, test_data=input.make_stock_input()
 #Initialize the parameters for the trainer, we will train in large minibatches in sequential order
 minibatch_size = 100
