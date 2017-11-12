@@ -19,9 +19,6 @@ label = C.input_variable(num_output_classes, dynamic_axes=input_dynamic_axes)
 print input
 print label
 
-exit()
-
-
 def create_model(input, num_output_classes):
 
     h = input
@@ -33,6 +30,8 @@ def create_model(input, num_output_classes):
     return r
 
 z = create_model(input, num_output_classes)
+print z
+exit()
 loss = C.cross_entropy_with_softmax(z, label)
 label_error = C.classification_error(z, label)
 lr_per_minibatch = C.learning_rate_schedule(0.125,C.UnitType.minibatch)
