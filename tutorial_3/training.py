@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from  tutorial_3.input import make_stock_input
+from tutorial_3.input import make_stock_input
 
 import cntk as C
 import cntk.tests.test_utils
