@@ -1,5 +1,10 @@
 # -*- coding:utf-8 -*-
-import  tutorial_3.input
+from  tutorial_3.input import make_stock_input
+
+
+
+make_stock_input()
+"""
 import cntk as C
 import cntk.tests.test_utils
 cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build system)
@@ -46,3 +51,6 @@ training_progress_output_freq = 1
 
 # Visualize the loss over minibatch
 plotdata = {"batchsize":[], "loss":[], "error":[]}
+
+
+"""
