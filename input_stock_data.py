@@ -111,7 +111,8 @@ def make_stock_input():
 
     for i in range(1, num_days_back + 1):
         data["p_" + str(i)] = np.where(data["Close"] > data["Close"].shift(i), 1, 0)  # i: number of look back days
-        print data["p_" + str(i)]
+        predictor_names.append("p_" + str(i))
+        #print data["p_" + str(i)]
     # print data.head(10)
     # print data.head(-10)
     #print data
