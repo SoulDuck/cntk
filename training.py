@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import input_stock_data
+import os
 import numpy as np
 import cntk as C
 import cntk.tests.test_utils
@@ -101,8 +102,17 @@ for i in range(epoch): # multiply by the
         plotdata["loss"].append(loss)
         plotdata["error"].append(error)
 
+try:
+    import matplotlib
+    import matplotlib.pyplot as plt
+except Exception as e:
+    if "DISPLAY" not in os.environ:
+        # remove Travis CI Error
+        matplotlib.use('Agg')
 
-import matplotlib.pyplot as plt
+
+
+
 
 plt.figure(1)
 plt.subplot(211)
