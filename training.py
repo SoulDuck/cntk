@@ -39,7 +39,7 @@ trainer = C.Trainer(z, (loss, label_error), [C.sgd(z.parameters, lr=lr_per_minib
 print 'a'
 training_features, training_labels, training_data , test_data=input_stock_data.make_stock_input()
 #Initialize the parameters for the trainer, we will train in large minibatches in sequential order
-minibatch_size = 100
+minibatch_size = 50 #100
 num_minibatches = len(training_data.index) // minibatch_size
 
 #Run the trainer on and perform model training
