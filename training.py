@@ -36,7 +36,7 @@ label_error = C.classification_error(z, label)
 lr_per_minibatch = C.learning_rate_schedule(0.125,C.UnitType.minibatch)
 trainer = C.Trainer(z, (loss, label_error), [C.sgd(z.parameters, lr=lr_per_minibatch)])
 print 'a'
-training_features, training_labels, test_data=input_stock_data.make_stock_input()
+training_features, training_labels, train_data , test_data=input_stock_data.make_stock_input()
 #Initialize the parameters for the trainer, we will train in large minibatches in sequential order
 minibatch_size = 100
 num_minibatches = len(training_data.index) // minibatch_size
