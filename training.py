@@ -60,9 +60,6 @@ print(len(tf))
 
 print("The shape of the training feature minibatch")
 print(tf[0].shape)
-
-
-
 tl = np.split(training_labels, 2)
 # It is key that we make only one pass through the data linearly in time
 num_passes = 1
@@ -81,12 +78,12 @@ def print_training_progress(trainer, mb, frequency, verbose=1):
 
 # Train our neural network
 tf = np.split(training_features,num_minibatches)
-print np.shape(training_features)
 tl = np.split(training_labels, num_minibatches)
-print np.shape(training_labels)
 
 
+print 'Training ...'
 for i in range(num_minibatches*num_passes): # multiply by the
+
     features = np.ascontiguousarray(tf[i%num_minibatches])
     labels = np.ascontiguousarray(tl[i%num_minibatches])
 
