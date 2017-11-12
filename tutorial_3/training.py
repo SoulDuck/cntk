@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from tutorial_3 import input
+import  tutorial_3.input
 import cntk as C
 import cntk.tests.test_utils
 cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build system)
