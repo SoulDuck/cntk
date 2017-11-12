@@ -33,16 +33,17 @@ def create_model(input, num_output_classes):
     return r
 
 z = create_model(input, num_output_classes)
-print z
+print 'Model shape : ',str(z)
+
 loss = C.cross_entropy_with_softmax(z, label)
 label_error = C.classification_error(z, label)
 lr_per_minibatch = C.learning_rate_schedule(0.125,C.UnitType.minibatch)
 trainer = C.Trainer(z, (loss, label_error), [C.sgd(z.parameters, lr=lr_per_minibatch)])
-print 'a'
 training_features, training_labels, training_data , test_data=input_stock_data.make_stock_input()
 training_features=training_features[:-1]
 training_labels=training_labels[:-1]
 training_data=training_data[:-1]
+
 
 #Initialize the parameters for the trainer, we will train in large minibatches in sequential order
 minibatch_size = 10 # 100
@@ -99,3 +100,21 @@ for i in range(epoch): # multiply by the
         plotdata["batchsize"].append(batchsize)
         plotdata["loss"].append(loss)
         plotdata["error"].append(error)
+
+
+import matplotlib.pyplot as plt
+
+plt.figure(1)
+plt.subplot(211)
+plt.plot(plotdata["batchsize"], plotdata["loss"], 'b--')
+plt.xlabel('Minibatch number')
+plt.ylabel('Loss')
+plt.title('Minibatch run vs. Training loss ')
+plt.show()
+
+plt.subplot(212)
+plt.plot(plotdata["batchsize"], plotdata["error"], 'r--')
+plt.xlabel('Minibatch number')
+plt.ylabel('Label Prediction Error')
+plt.title('Minibatch run vs. Label Prediction Error ')
+plt.show()
