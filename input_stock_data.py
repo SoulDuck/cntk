@@ -114,10 +114,10 @@ def make_stock_input():
         print data["p_" + str(i)]
     # print data.head(10)
     # print data.head(-10)
-    print data
-    print data[-1:]
+    #print data
+    #print data[-1:]
 
-    print np.shape(data[:10])
+    #print np.shape(data[:10])
     # If you want to save the file to your local drive
     # data.to_csv("PATH_TO_SAVE.csv")
 
@@ -135,6 +135,9 @@ def make_stock_input():
     test_data = data["2017-10-01":]
     training_features = np.asarray(training_data[predictor_names], dtype="float32")
     training_labels = np.asarray(training_data[["next_day", "next_day_opposite"]], dtype="float32")
+
+    print 'training features shape {}'.format(str(np.shape(training_features)))
+
 
     ############################################# Make Model ###################################################
     return training_features , training_labels ,training_data , test_data
