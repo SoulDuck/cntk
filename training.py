@@ -85,7 +85,9 @@ tl = np.split(training_labels, num_minibatches)
 
 print 'Training ...'
 print 'epoch : {}'.format(num_minibatches*num_passes)
-for i in range(num_minibatches*num_passes): # multiply by the
+epoch=num_minibatches*num_passes
+epoch=10000
+for i in range(epoch): # multiply by the
 
     features = np.ascontiguousarray(tf[i%num_minibatches])
     labels = np.ascontiguousarray(tl[i%num_minibatches])
