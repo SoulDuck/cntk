@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 import input
  #Lets build the network
 num_days_back = 8 # 이게 input py에서 가져온거다. 8일 전까지 확인 하기 때문에...
