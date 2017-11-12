@@ -38,8 +38,12 @@ lr_per_minibatch = C.learning_rate_schedule(0.125,C.UnitType.minibatch)
 trainer = C.Trainer(z, (loss, label_error), [C.sgd(z.parameters, lr=lr_per_minibatch)])
 print 'a'
 training_features, training_labels, training_data , test_data=input_stock_data.make_stock_input()
+training_features=training_features[:-1]
+training_labels=training_labels[:-1]
+training_data=training_data[:-1]
+
 #Initialize the parameters for the trainer, we will train in large minibatches in sequential order
-minibatch_size = 50 #100
+minibatch_size = 50 # 100
 num_minibatches = len(training_data.index) // minibatch_size
 
 #Run the trainer on and perform model training
@@ -51,7 +55,7 @@ plotdata = {"batchsize":[], "loss":[], "error":[]}
 
 ##### Training #####
 print 'Training features shape : '  ,np.shape(training_features)
-tf = np.split(training_features,[minibatch_size , minibatch_size + 10 ])
+tf = np.split(training_features,10)
 
 print("Number of mini batches")
 print(len(tf))
