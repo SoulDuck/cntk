@@ -52,8 +52,9 @@ plotdata = {"batchsize":[], "loss":[], "error":[]}
 
 # Train our neural network
 tf = np.split(training_features,num_minibatches)
+print np.shape(training_features)
 tl = np.split(training_labels, num_minibatches)
-
+print np.shape(training_labels)
 for i in range(num_minibatches*num_passes): # multiply by the
     features = np.ascontiguousarray(tf[i%num_minibatches])
     labels = np.ascontiguousarray(tl[i%num_minibatches])
