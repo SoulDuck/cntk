@@ -43,19 +43,17 @@ training_labels=training_labels[:-1]
 training_data=training_data[:-1]
 
 #Initialize the parameters for the trainer, we will train in large minibatches in sequential order
-minibatch_size = 50 # 100
+minibatch_size = 10 # 100
 num_minibatches = len(training_data.index) // minibatch_size
-
 #Run the trainer on and perform model training
 training_progress_output_freq = 1
-
 # Visualize the loss over minibatch
 plotdata = {"batchsize":[], "loss":[], "error":[]}
 
 
 ##### Training #####
 print 'Training features shape : '  ,np.shape(training_features)
-tf = np.split(training_features,10)
+tf = np.split(training_features,minibatch_size)
 
 print("Number of mini batches")
 print(len(tf))
@@ -63,8 +61,9 @@ print(len(tf))
 print("The shape of the training feature minibatch")
 print(tf[0].shape)
 
-tl = np.split(training_labels, 2)
 
+
+tl = np.split(training_labels, 2)
 # It is key that we make only one pass through the data linearly in time
 num_passes = 1
 
