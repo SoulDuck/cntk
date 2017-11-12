@@ -51,7 +51,7 @@ plotdata = {"batchsize":[], "loss":[], "error":[]}
 
 ##### Training #####
 print 'Training features shape : '  ,np.shape(training_features)
-tf = np.split(training_features,num_minibatches)
+tf = np.split(training_features,[minibatch_size , minibatch_size + 10 ])
 
 print("Number of mini batches")
 print(len(tf))
