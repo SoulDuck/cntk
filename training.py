@@ -17,8 +17,10 @@ input_dynamic_axes = [C.Axis.default_batch_axis()]
 input = C.input_variable(input_dim, dynamic_axes=input_dynamic_axes)
 label = C.input_variable(num_output_classes, dynamic_axes=input_dynamic_axes)
 
-print input
-print label
+
+
+print "input shape : " ,input
+print "label shape : " ,label
 
 def create_model(input, num_output_classes):
 
