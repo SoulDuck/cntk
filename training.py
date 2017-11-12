@@ -59,7 +59,7 @@ print(len(tf))
 print("The shape of the training feature minibatch")
 print(tf[0].shape)
 
-tl = np.split(training_labels, num_minibatches)
+tl = np.split(training_labels, 2)
 
 # It is key that we make only one pass through the data linearly in time
 num_passes = 1
