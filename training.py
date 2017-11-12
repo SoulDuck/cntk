@@ -86,7 +86,7 @@ for i in range(num_minibatches*num_passes): # multiply by the
 
     features = np.ascontiguousarray(tf[i%num_minibatches])
     labels = np.ascontiguousarray(tl[i%num_minibatches])
-
+    print 'features {} , labels {} '.format(np.shape(features ), np.shape(labels))
     # Specify the mapping of input variables in the model to actual minibatch data to be trained with
     trainer.train_minibatch({input : features, label : labels})
     batchsize, loss, error = print_training_progress(trainer, i, training_progress_output_freq, verbose=1)
