@@ -9,11 +9,13 @@ def split_data(data, val_size=0.1, test_size=0.1):
     """
     splits np.array into training, validation and test
     """
+    print 'data shape {}'.format(np.shape(data))
     pos_test = int(len(data) * (1 - test_size))
     pos_val = int(len(data[:pos_test]) * (1 - val_size))
-
     train, val, test = data[:pos_val], data[pos_val:pos_test], data[pos_test:]
-
+    print 'train shape : {}'.format(np.shape(train))
+    print 'val shape : {}'.format(np.shape(val))
+    print 'test shape : {}'.format(np.shape(test))
     return {"train": train, "val": val, "test": test}
 
 
@@ -29,22 +31,22 @@ def generate_data(fct, x, time_steps, time_shift):
     for i in range(len(data) - time_steps + 1):
         rnn_x.append(data['a'].iloc[i: i + time_steps].as_matrix())
     rnn_x = np.array(rnn_x)
-    print 'rnn input data x shpae : {}'.format(str(np.shape(rnn_x)))
+
     # Reshape or rearrange the data from row to columns
     # to be compatible with the input needed by the LSTM model
     # which expects 1 float per time point in a given batch
-    print rnn_x.shape
-    print rnn_x.shape + (1,)
     rnn_x = rnn_x.reshape(rnn_x.shape + (1,))
     rnn_y = data['b'].values
-    print np.shape(rnn_y)
     rnn_y = rnn_y[time_steps - 1 :]
-
-    # Reshape or rearrange the data from row to columns
-    # to match the input shape
     rnn_y = rnn_y.reshape(rnn_y.shape + (1,))
 
-    return split_data(rnn_x), split_data(rnn_y)
+    print 'rnn input data x shpae : {}'.format(str(np.shape(rnn_x)))
+    print 'rnn input data y shpae : {}'.format(str(np.shape(rnn_y)))
+    # Reshape or rearrange the data from row to columns
+    # to match the input shape
+    rnn_x=split_data(rnn_x)
+    rnn_y = split_data(rnn_y)
+    return rnn_x , rnn_y
 
 
 if __name__ == '__main__':
