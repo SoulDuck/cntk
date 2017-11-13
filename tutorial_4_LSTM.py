@@ -13,7 +13,8 @@ import input_sine
 isFast=True
 N = 5  # input: N subsequent values
 M = 5  # output: predict 1 value M steps ahead
-X,Y=input_sine.generate_data(np.sine  , np.linspace(0,100,10000 , dtype=np.float32) ,  N, M )
+
+X,Y=input_sine.generate_data(np.sin  , np.linspace(0,100,10000 , dtype=np.float32) ,  N, M )
 m=5
 def create_model(x):
     """Create the model for time series prediction"""
