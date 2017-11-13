@@ -59,7 +59,7 @@ z = create_model(x)
 # expected output (label), also the dynamic axes of the model output
 # is specified as the model of the label input
 l = C.input_variable(1, dynamic_axes=z.dynamic_axes, name="y")
-
+print l
 # the learning rate
 learning_rate = 0.02
 lr_schedule = C.learning_rate_schedule(learning_rate, C.UnitType.minibatch)

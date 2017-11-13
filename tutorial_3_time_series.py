@@ -110,9 +110,6 @@ for i in range(epoch): # multiply by the
 
 
 
-
-
-
 plt.figure(1)
 plt.subplot(211)
 plt.plot(plotdata["batchsize"], plotdata["loss"], 'b--')
