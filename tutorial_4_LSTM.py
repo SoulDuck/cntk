@@ -106,3 +106,7 @@ def get_mse(X,Y,labeltxt):
 # Print the train and validation errors
 for labeltxt in ["train", "val"]:
     print("mse for {}: {:.6f}".format(labeltxt, get_mse(X, Y, labeltxt)))
+
+# Print validate and test error
+labeltxt = "test"
+print("mse for {}: {:.6f}".format(labeltxt, get_mse(X, Y, labeltxt)))
