@@ -13,6 +13,9 @@ cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build 
 #%matplotlib inline
 
 isFast=True
+N = 5  # input: N subsequent values
+M = 5  # output: predict 1 value M steps ahead
+m=5
 def create_model(x):
     """Create the model for time series prediction"""
     with C.layers.default_options(initial_state = 0.1):
