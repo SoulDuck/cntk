@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/input_scolar.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutorial_4_LSTM_predict_solar.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tutorial_4_LSTM.py" afterPath="$PROJECT_DIR$/tutorial_4_LSTM_predict_sin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial_4_LSTM.py" afterPath="$PROJECT_DIR$/tutorial_4_LSTM.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,13 +41,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tutorial_4_LSTM.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM.py">
+      <file leaf-file-name="tutorial_4_LSTM_predict_sin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM_predict_sin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="17" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sin_graph_with_pred.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sin_graph_with_pred.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tutorial_4_LSTM_predict_solar.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM_predict_solar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input_scolar.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input_scolar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,25 +124,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tutorial_2_CNN_type2.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tutorial_2_CNN_type2.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pandas_datareader/data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -151,6 +165,9 @@
         <option value="$PROJECT_DIR$/input_sine.py" />
         <option value="$PROJECT_DIR$/tutorial_3_time_series.py" />
         <option value="$PROJECT_DIR$/tutorial_4_LSTM.py" />
+        <option value="$PROJECT_DIR$/tutorial_5.py" />
+        <option value="$PROJECT_DIR$/input_scolar.py" />
+        <option value="$PROJECT_DIR$/tutorial_4_LSTM_predict_solar.py" />
       </list>
     </option>
   </component>
@@ -299,7 +316,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="cntk" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorial_4_LSTM.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tutorial_4_LSTM_predict_sin.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -396,13 +413,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add tutorial_3">
-      <created>1510484471356</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1510484471356</updated>
     </task>
     <task id="LOCAL-00011" summary="add tutorial_3">
       <created>1510484507939</created>
@@ -740,7 +750,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510553104562</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="add tutorial_4">
+      <created>1510553122566</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1510553122566</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -959,10 +976,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM.py">
+    <entry file="file://$PROJECT_DIR$/sin_graph_with_pred.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_scolar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM_predict_sin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM_predict_solar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
