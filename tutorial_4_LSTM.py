@@ -110,3 +110,16 @@ for labeltxt in ["train", "val"]:
 # Print validate and test error
 labeltxt = "test"
 print("mse for {}: {:.6f}".format(labeltxt, get_mse(X, Y, labeltxt)))
+
+
+# predict
+f, a = plt.subplots(3, 1, figsize = (12, 8))
+for j, ds in enumerate(["train", "val", "test"]):
+    results = []
+    for x1, y1 in next_batch(X, Y, ds):
+        pred = z.eval({x: x1})
+        results.extend(pred[:, 0])
+    a[j].plot(Y[ds], label = ds + ' raw');
+    a[j].plot(results, label = ds + ' predicted');
+[i.legend() for i in a];
+plt.savefig('./sin_graph_with_pred.png')
