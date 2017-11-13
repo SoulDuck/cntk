@@ -21,23 +21,21 @@ def generate_solar_data(input_url, time_steps, normalize=1, val_size=0.1, test_s
         print("using cache for ", input_url)
 
     df = pd.read_csv(cache_file, index_col="time", parse_dates=['time'], dtype=np.float32)
-
     df["date"] = df.index.date
-
     # normalize data
     df['solar.current'] /= normalize
     df['solar.total'] /= normalize
-
     # group by day, find the max for a day and add a new column .max
     grouped = df.groupby(df.index.date).max()
     grouped.columns = ["solar.current.max", "solar.total.max", "date"]
-
     # merge continuous readings and daily max values into a single frame
     df_merged = pd.merge(df, grouped, right_index=True, on="date")
     df_merged = df_merged[["solar.current", "solar.total",
                            "solar.current.max", "solar.total.max"]]
     # we group by day so we can process a day at a time.
     grouped = df_merged.groupby(df_merged.index.date)
+
+
     per_day = []
     for _, group in grouped:
         per_day.append(group)
@@ -76,3 +74,14 @@ def generate_solar_data(input_url, time_steps, normalize=1, val_size=0.1, test_s
     for ds in ["train", "val", "test"]:
         result_y[ds] = np.array(result_y[ds])
     return result_x, result_y
+
+
+# We keep upto 14 inputs from a day
+TIMESTEPS = 14
+
+# 20000 is the maximum total output in our dataset. We normalize all values with
+# this so our inputs are between 0.0 and 1.0 range.
+NORMALIZE = 20000
+
+X, Y = generate_solar_data("https://www.cntk.ai/jup/dat/solar.csv",
+                           TIMESTEPS, normalize=NORMALIZE)
