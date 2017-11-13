@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="add tutorial_4">
+    <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial_4_LSTM.py" afterPath="$PROJECT_DIR$/tutorial_4_LSTM.py" />
     </list>
@@ -42,9 +42,11 @@
       <file leaf-file-name="tutorial_4_LSTM.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="45">
+              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -395,13 +397,6 @@
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
     </task>
-    <task id="LOCAL-00009" summary="add tutorial_3">
-      <created>1510484426869</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1510484426869</updated>
-    </task>
     <task id="LOCAL-00010" summary="add tutorial_3">
       <created>1510484471356</created>
       <option name="number" value="00010" />
@@ -738,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510553021251</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="add tutorial_4">
+      <created>1510553104562</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1510553104562</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -959,9 +961,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="45">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
