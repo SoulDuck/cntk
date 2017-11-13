@@ -92,3 +92,17 @@ for epoch in range(0, EPOCHS):
         print("epoch: {}, loss: {:.5f}".format(epoch, training_loss))
 
 print("training took {0:.1f} sec".format(time.time() - start))
+
+
+# validate
+def get_mse(X,Y,labeltxt):
+    result = 0.0
+    for x1, y1 in next_batch(X, Y, labeltxt):
+        eval_error = trainer.test_minibatch({x : x1, l : y1})
+        result += eval_error
+    return result/len(X[labeltxt])
+
+
+# Print the train and validation errors
+for labeltxt in ["train", "val"]:
+    print("mse for {}: {:.6f}".format(labeltxt, get_mse(X, Y, labeltxt)))
