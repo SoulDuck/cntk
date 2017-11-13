@@ -9,7 +9,8 @@ import cntk as C
 import cntk.tests.test_utils
 cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build system)
 
-%matplotlib inline
+
+#%matplotlib inline
 
 isFast=True
 def create_model(x):
