@@ -78,7 +78,7 @@ def generate_solar_data(input_url, time_steps, normalize=1, val_size=0.1, test_s
         else:
             current_set = "train"
         max_total_for_day = np.array(day["solar.total.max"].values[0])
-        print 'total : {}'.format(len(total))
+        #print 'total : {}'.format(len(total))
         for j in range(2, len(total)):
             #print 'current set : {}'.format(current_set)
             result_x[current_set].append(total[0:j])

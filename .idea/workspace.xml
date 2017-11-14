@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/input_solar.py" afterPath="$PROJECT_DIR$/input_solar.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input_solar.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="input_solar.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input_solar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="159">
+              <caret line="80" column="9" lean-forward="false" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -78,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tutorial_4_LSTM_predict_solar.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tutorial_4_LSTM_predict_solar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM_predict_solar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="77" column="14" lean-forward="true" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
+            <state relative-caret-position="633">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -139,9 +140,10 @@
       <find>np.s</find>
       <find>TRAINING_STEPS</find>
       <find>val_size</find>
-      <find>total</find>
       <find>time_step</find>
       <find>get_mse</find>
+      <find>time</find>
+      <find>total</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,8 +167,8 @@
         <option value="$PROJECT_DIR$/tutorial_4_LSTM.py" />
         <option value="$PROJECT_DIR$/tutorial_5.py" />
         <option value="$PROJECT_DIR$/input_scolar.py" />
-        <option value="$PROJECT_DIR$/input_solar.py" />
         <option value="$PROJECT_DIR$/tutorial_4_LSTM_predict_solar.py" />
+        <option value="$PROJECT_DIR$/input_solar.py" />
       </list>
     </option>
   </component>
@@ -429,13 +431,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add tutorial_3">
-      <created>1510485155823</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1510485155823</updated>
     </task>
     <task id="LOCAL-00018" summary="add tutorial_3">
       <created>1510485185766</created>
@@ -773,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510636939011</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="tutorial_4_solar_csv">
+      <created>1510636975348</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1510636975348</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1085,16 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input_solar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM_predict_sin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1107,10 +1099,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM_predict_solar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="77" column="14" lean-forward="true" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
+        <state relative-caret-position="633">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_solar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="80" column="9" lean-forward="false" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
