@@ -88,6 +88,6 @@ def training(EPOCHS=10000):
             loss_summary.append(training_loss)
             print("epoch: {}, loss: {:.4f}".format(epoch, training_loss))
 
-print("Training took {:.1f} sec".format(time.time() - start))
+    print("Training took {:.1f} sec".format(time.time() - start))
 if __name__ == '__main__':
     training()
