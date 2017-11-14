@@ -77,7 +77,7 @@ def training(EPOCHS=100):
 
 
     loss_summary = []
-
+    #Get Error
     start = time.time()
     for epoch in range(0, EPOCHS):
         for x_batch, l_batch in next_batch(X, Y, "train"):
@@ -87,7 +87,27 @@ def training(EPOCHS=100):
             training_loss = trainer.previous_minibatch_loss_average
             loss_summary.append(training_loss)
             print("epoch: {}, loss: {:.4f}".format(epoch, training_loss))
-
+    # Visualization
+    for j, ds in enumerate(["val", "test"]):
+        results = []
+        for x_batch, _ in next_batch(X, Y, ds):
+            pred = z.eval({x: x_batch})
+            results.extend(pred[:, 0])
+        # because we normalized the input data we need to multiply the prediction
+        # with SCALER to get the real values.
+        a[j].plot((Y[ds] * NORMALIZE).flatten(), label=ds + ' raw');
+        a[j].plot(np.array(results) * NORMALIZE, label=ds + ' pred');
+        a[j].legend();
+    plt.savefig('./plot_solar_pred.png')
     print("Training took {:.1f} sec".format(time.time() - start))
+# validate
+def get_mse(X,Y,labeltxt):
+    result = 0.0
+    for x1, y1 in next_batch(X, Y, labeltxt):
+        eval_error = trainer.test_minibatch({x : x1, l : y1})
+        result += eval_error
+    return result/len(X[labeltxt])
+# predict
+f, a = plt.subplots(2, 1, figsize=(12, 8))
 if __name__ == '__main__':
     training()
