@@ -45,7 +45,7 @@ def create_model(x):
         return m
 
 
-def training(EPOCHS=10000):
+def training(EPOCHS=100):
     # input sequences
     x = C.sequence.input_variable(1)
     print 'x shape : {}'.format(str(x))
