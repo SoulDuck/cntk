@@ -48,6 +48,7 @@ def create_model(x):
 def training():
     # input sequences
     x = C.sequence.input_variable(1)
+    print 'x shape : {}'.format(str(x))
 
     # create the model
     z = create_model(x)
