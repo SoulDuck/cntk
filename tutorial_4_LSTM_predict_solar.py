@@ -45,7 +45,7 @@ def create_model(x):
         return m
 
 
-def training():
+def training(EPOCHS=10000):
     # input sequences
     x = C.sequence.input_variable(1)
     print 'x shape : {}'.format(str(x))
@@ -74,5 +74,20 @@ def training():
                           momentum = momentum_time_constant)
     trainer = C.Trainer(z, (loss, error), [learner])
 
+
+
+    loss_summary = []
+
+    start = time.time()
+    for epoch in range(0, EPOCHS):
+        for x_batch, l_batch in next_batch(X, Y, "train"):
+            trainer.train_minibatch({x: x_batch, l: l_batch})
+
+        if epoch % (EPOCHS / 10) == 0:
+            training_loss = trainer.previous_minibatch_loss_average
+            loss_summary.append(training_loss)
+            print("epoch: {}, loss: {:.4f}".format(epoch, training_loss))
+
+print("Training took {:.1f} sec".format(time.time() - start))
 if __name__ == '__main__':
     training()
