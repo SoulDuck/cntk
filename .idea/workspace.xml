@@ -109,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/txt2ctf.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="403">
-              <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+              <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
               <folding>
                 <element signature="e#1422#1432#0" expanded="true" />
               </folding>
@@ -461,13 +461,6 @@
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
     </task>
-    <task id="LOCAL-00031" summary="add tutorial_3">
-      <created>1510486441342</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1510486441342</updated>
-    </task>
     <task id="LOCAL-00032" summary="add tutorial_3">
       <created>1510486564510</created>
       <option name="number" value="00032" />
@@ -804,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510725024306</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="tutorial_4_solar_csv">
+      <created>1510725278815</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1510725278815</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1230,7 +1230,7 @@
     <entry file="file://$PROJECT_DIR$/txt2ctf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
-          <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+          <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
           <folding>
             <element signature="e#1422#1432#0" expanded="true" />
           </folding>
