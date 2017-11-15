@@ -75,11 +75,9 @@
       <file leaf-file-name="input_ATIS.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/input_ATIS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="59" column="49" lean-forward="false" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-              <folding>
-                <element signature="e#22#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -443,13 +441,6 @@
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
     </task>
-    <task id="LOCAL-00046" summary="add tutorial_3">
-      <created>1510491266085</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1510491266085</updated>
-    </task>
     <task id="LOCAL-00047" summary="add tutorial_3">
       <created>1510491579396</created>
       <option name="number" value="00047" />
@@ -786,7 +777,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510730079567</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="tutorial_5_solar_csv">
+      <created>1510730240519</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1510730240519</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -866,9 +864,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1212,11 +1208,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/input_ATIS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="59" column="49" lean-forward="false" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-          <folding>
-            <element signature="e#22#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

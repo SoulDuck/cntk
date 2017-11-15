@@ -1,7 +1,7 @@
 #-*- coding:utf-8 -*-
 import requests
 import os
-In [2]:
+
 import math
 import numpy as np
 
