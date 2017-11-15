@@ -57,5 +57,3 @@ def create_reader(path, is_training):
          slot_labels   = C.io.StreamDef(field='S2', shape=num_labels,  is_sparse=True)
      )), randomize=is_training, max_sweeps = C.io.INFINITELY_REPEAT if is_training else 1)
 
-reader = create_reader(os.path.join('./data/ATIS' , data['train']['file']), is_training=True)
-reader.streams.keys()

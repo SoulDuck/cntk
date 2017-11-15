@@ -3,6 +3,7 @@ import numpy as np
 
 import cntk as C
 import cntk.tests.test_utils
+import input_ATIS
 cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build system)
 C.cntk_py.set_fixed_random_seed(1) # fix a random seed for CNTK components
 
@@ -117,6 +118,6 @@ def train(reader, model_func, max_epochs=10):
 def do_train():
     global z
     z = create_model()
-    reader = create_reader(data['train']['file'], is_training=True)
+    reader = input_ATIS.create_reader(input_ATIS.data['train']['file'], is_training=True)
     train(reader, z)
 do_train()
