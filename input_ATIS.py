@@ -49,7 +49,7 @@ for item in data.values():
         print("Download completed")
 
 
-
+vocab_size = 943 ; num_labels = 129 ; num_intents = 26
 
 def create_reader(path, is_training):
     return C.io.MinibatchSource(C.io.CTFDeserializer(path, C.io.StreamDefs(
@@ -58,3 +58,5 @@ def create_reader(path, is_training):
          slot_labels   = C.io.StreamDef(field='S2', shape=num_labels,  is_sparse=True)
      )), randomize=is_training, max_sweeps = C.io.INFINITELY_REPEAT if is_training else 1)
 
+reader = create_reader(data['train']['file'], is_training=True)
+reader.streams.keys()
