@@ -81,7 +81,9 @@ if __name__ == "__main__":
     # creating inputs
     inputs = [sys.stdin]
     if len(args.input) != 0:
-        inputs = [open(i , mode='w') for i in args.input]
+        for i in args.input:
+            print i
+            inputs = open(i , mode='w')
 
     # creating output
     output = sys.stdout

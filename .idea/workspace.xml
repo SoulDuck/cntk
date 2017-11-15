@@ -108,10 +108,12 @@
       <file leaf-file-name="txt2ctf.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/txt2ctf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+            <state relative-caret-position="418">
+              <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
               <folding>
                 <element signature="e#1422#1432#0" expanded="true" />
+                <marker date="1510725461000" expanded="true" signature="4346:4458" ph="..." />
+                <marker date="1510725461000" expanded="true" signature="4375:4458" ph="..." />
               </folding>
             </state>
           </provider>
@@ -461,13 +463,6 @@
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
     </task>
-    <task id="LOCAL-00032" summary="add tutorial_3">
-      <created>1510486564510</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1510486564510</updated>
-    </task>
     <task id="LOCAL-00033" summary="add tutorial_3">
       <created>1510486726684</created>
       <option name="number" value="00033" />
@@ -804,7 +799,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510725278815</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="tutorial_4_solar_csv">
+      <created>1510725401198</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1510725401198</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1229,10 +1231,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/txt2ctf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        <state relative-caret-position="418">
+          <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
           <folding>
             <element signature="e#1422#1432#0" expanded="true" />
+            <marker date="1510725461000" expanded="true" signature="4346:4458" ph="..." />
+            <marker date="1510725461000" expanded="true" signature="4375:4458" ph="..." />
           </folding>
         </state>
       </provider>
