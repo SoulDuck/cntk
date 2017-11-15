@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial_6_alexnet_distrubuted.py" afterPath="$PROJECT_DIR$/tutorial_6_alexnet_distrubuted.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -95,8 +96,8 @@
       <file leaf-file-name="tutorial_6_alexnet_distrubuted.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial_6_alexnet_distrubuted.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+            <state relative-caret-position="313">
+              <caret line="210" column="45" lean-forward="false" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -461,13 +462,6 @@
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
     </task>
-    <task id="LOCAL-00056" summary="add tutorial_4">
-      <created>1510552868885</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1510552868885</updated>
-    </task>
     <task id="LOCAL-00057" summary="add tutorial_4">
       <created>1510553021250</created>
       <option name="number" value="00057" />
@@ -804,7 +798,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510753624129</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="tutorial_6_Alexnet_distributed and ImageNet DataSet">
+      <created>1510753729548</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1510753729548</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1220,8 +1221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_6_alexnet_distrubuted.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="206" column="0" lean-forward="true" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
+        <state relative-caret-position="313">
+          <caret line="210" column="45" lean-forward="false" selection-start-line="210" selection-start-column="45" selection-end-line="210" selection-end-column="45" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
