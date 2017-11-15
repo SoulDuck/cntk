@@ -43,7 +43,7 @@ print(z(x).embed.E.shape)
 def create_criterion_function(model):
     labels = C.placeholder(name='labels')
     ce   = C.cross_entropy_with_softmax(model, labels)
-    errs = C.classification_error      (model, labels)
+    errs = C.classification_error(model, labels)
     return C.combine ([ce, errs]) # (features, labels) -> (loss, metric)
 
 criterion = create_criterion_function(create_model())
