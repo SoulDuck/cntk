@@ -1,6 +1,15 @@
 #-*- coding:utf-8 -*-
 import requests
 import os
+In [2]:
+import math
+import numpy as np
+
+import cntk as C
+import cntk.tests.test_utils
+cntk.tests.test_utils.set_device_from_pytest_env() # (only needed for our build system)
+C.cntk_py.set_fixed_random_seed(1) #
+
 
 def download(url, filename):
     """ utility function to download a file """
@@ -38,4 +47,14 @@ for item in data.values():
         print 'url :' ,url
         download(url, os.path.join('./data/ATIS',item['file']))
         print("Download completed")
+
+
+
+
+def create_reader(path, is_training):
+    return C.io.MinibatchSource(C.io.CTFDeserializer(path, C.io.StreamDefs(
+         query         = C.io.StreamDef(field='S0', shape=vocab_size,  is_sparse=True),
+         intent_unused = C.io.StreamDef(field='S1', shape=num_intents, is_sparse=True),
+         slot_labels   = C.io.StreamDef(field='S2', shape=num_labels,  is_sparse=True)
+     )), randomize=is_training, max_sweeps = C.io.INFINITELY_REPEAT if is_training else 1)
 

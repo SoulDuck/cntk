@@ -54,6 +54,10 @@ def create_criterion_function_preferred(model, labels):
     errs = C.classification_error(model, labels)
     return ce, errs # (model, labels) -> (loss, error metr
 
+
+
+
+
 def train(reader, model_func, max_epochs=10):
 
     # Instantiate the model function; x is the input (feature) variable
@@ -108,3 +112,11 @@ def train(reader, model_func, max_epochs=10):
             trainer.train_minibatch(data)               # update model with it
             t += data[y].num_samples                    # samples so far
         trainer.summarize_training_progress()
+
+
+def do_train():
+    global z
+    z = create_model()
+    reader = create_reader(data['train']['file'], is_training=True)
+    train(reader, z)
+do_train()
