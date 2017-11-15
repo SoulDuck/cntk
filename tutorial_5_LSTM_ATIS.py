@@ -47,3 +47,9 @@ def create_criterion_function(model):
 
 criterion = create_criterion_function(create_model())
 print criterion.replace_placeholders({criterion.placeholders[0]: C.sequence.input_variable(num_labels)})
+
+
+def create_criterion_function_preferred(model, labels):
+    ce   = C.cross_entropy_with_softmax(model, labels)
+    errs = C.classification_error(model, labels)
+    return ce, errs # (model, labels) -> (loss, error metr
