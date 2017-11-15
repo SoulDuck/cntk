@@ -1,6 +1,6 @@
 import math
 import numpy as np
-
+import os
 import cntk as C
 import cntk.tests.test_utils
 import input_ATIS
@@ -118,6 +118,6 @@ def train(reader, model_func, max_epochs=10):
 def do_train():
     global z
     z = create_model()
-    reader = input_ATIS.create_reader(input_ATIS.data['train']['file'], is_training=True)
+    reader = input_ATIS.create_reader(os.path.join('./data/ATIS/' , input_ATIS.data['train']['file']), is_training=True)
     train(reader, z)
 do_train()
