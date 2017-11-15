@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutorial_5_LSTM_ATIS.py" afterPath="$PROJECT_DIR$/tutorial_5_LSTM_ATIS.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,9 +95,11 @@
       <file leaf-file-name="tutorial_5_LSTM_ATIS.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial_5_LSTM_ATIS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1234">
-              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -441,13 +442,6 @@
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
     </task>
-    <task id="LOCAL-00049" summary="add tutorial_4">
-      <created>1510548432870</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1510548432870</updated>
-    </task>
     <task id="LOCAL-00050" summary="add tutorial_4">
       <created>1510548513253</created>
       <option name="number" value="00050" />
@@ -784,7 +778,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510730626266</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="tutorial_5_solar_csv">
+      <created>1510730703481</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1510730703481</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -886,7 +887,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1208,9 +1211,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_5_LSTM_ATIS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1234">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
