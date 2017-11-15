@@ -121,3 +121,35 @@ def do_train():
     reader = input_ATIS.create_reader(os.path.join('./data/ATIS/' , input_ATIS.data['train']['file']), is_training=True)
     train(reader, z)
 do_train()
+
+
+def evaluate(reader, model_func):
+
+    # Instantiate the model function; x is the input (feature) variable
+    model = model_func(x)
+
+    # Create the loss and error functions
+    loss, label_error = create_criterion_function_preferred(model, y)
+
+    # process minibatches and perform evaluation
+    progress_printer = C.logging.ProgressPrinter(tag='Evaluation', num_epochs=0)
+
+    while True:
+        minibatch_size = 500
+        data = reader.next_minibatch(minibatch_size, input_map={  # fetch minibatch
+            x: reader.streams.query,
+            y: reader.streams.slot_labels
+        })
+        if not data:                                 # until we hit the end
+            break
+
+        evaluator = C.eval.Evaluator(loss, progress_printer)
+        evaluator.test_minibatch(data)
+
+    evaluator.summarize_test_progress()
+
+def do_test():
+    reader = input_ATIS.create_reader(os.path.join('./data/ATIS/' , input_ATIS.data['test']['file']), is_training=False)
+    evaluate(reader, z)
+do_test()
+z.classify.b.value
