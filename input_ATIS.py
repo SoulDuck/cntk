@@ -50,7 +50,6 @@ for item in data.values():
 
 
 vocab_size = 943 ; num_labels = 129 ; num_intents = 26
-
 def create_reader(path, is_training):
     return C.io.MinibatchSource(C.io.CTFDeserializer(path, C.io.StreamDefs(
          query         = C.io.StreamDef(field='S0', shape=vocab_size,  is_sparse=True),
@@ -58,5 +57,5 @@ def create_reader(path, is_training):
          slot_labels   = C.io.StreamDef(field='S2', shape=num_labels,  is_sparse=True)
      )), randomize=is_training, max_sweeps = C.io.INFINITELY_REPEAT if is_training else 1)
 
-reader = create_reader(data['train']['file'], is_training=True)
+reader = create_reader(os.path.join('./data/ATIS' , data['train']['file']), is_training=True)
 reader.streams.keys()
