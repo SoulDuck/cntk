@@ -39,7 +39,6 @@ print(z.classify.b.value)
 z = create_model()
 print(z(x).embed.E.shape)
 
-
 def create_criterion_function(model):
     labels = C.placeholder(name='labels')
     ce   = C.cross_entropy_with_softmax(model, labels)
@@ -47,4 +46,4 @@ def create_criterion_function(model):
     return C.combine ([ce, errs]) # (features, labels) -> (loss, metric)
 
 criterion = create_criterion_function(create_model())
-criterion.replace_placeholders({criterion.placeholders[0]: C.sequence.input_variable(num_labels)})
+print criterion.replace_placeholders({criterion.placeholders[0]: C.sequence.input_variable(num_labels)})
