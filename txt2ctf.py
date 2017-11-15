@@ -81,7 +81,7 @@ if __name__ == "__main__":
     # creating inputs
     inputs = [sys.stdin]
     if len(args.input) != 0:
-        inputs = [open(i, encoding="utf-8") for i in args.input]
+        inputs = [open(i) for i in args.input]
 
     # creating output
     output = sys.stdout

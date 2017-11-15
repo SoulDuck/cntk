@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="tutorial_4_solar_csv">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/txt2ctf.py" />
+    <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/txt2ctf.py" afterPath="$PROJECT_DIR$/txt2ctf.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,18 +15,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="input_stock_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input_stock_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1830">
-              <caret line="127" column="56" lean-forward="false" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
-              <folding>
-                <element signature="e#23#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="input_solar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input_solar.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -120,8 +108,20 @@
       <file leaf-file-name="txt2ctf.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/txt2ctf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1338">
-              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="403">
+              <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+              <folding>
+                <element signature="e#1422#1432#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="query.wl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/ATIS/query.wl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -179,6 +179,7 @@
         <option value="$PROJECT_DIR$/tutorial_4_LSTM_predict_solar.py" />
         <option value="$PROJECT_DIR$/input_ATIS.py" />
         <option value="$PROJECT_DIR$/tutorial_5_LSTM_ATIS.py" />
+        <option value="$PROJECT_DIR$/txt2ctf.py" />
       </list>
     </option>
   </component>
@@ -226,6 +227,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cntk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ATIS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,13 +460,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
-    </task>
-    <task id="LOCAL-00030" summary="add tutorial_3">
-      <created>1510486093319</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1510486093319</updated>
     </task>
     <task id="LOCAL-00031" summary="add tutorial_3">
       <created>1510486441342</created>
@@ -785,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510723714216</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="tutorial_4_solar_csv">
+      <created>1510725024306</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1510725024306</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -828,16 +847,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/input_solar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="80" column="9" lean-forward="false" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_4_LSTM_predict_sin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1500">
@@ -1210,11 +1219,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/ATIS/query.wl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/txt2ctf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1338">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="403">
+          <caret line="83" column="24" lean-forward="false" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+          <folding>
+            <element signature="e#1422#1432#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
