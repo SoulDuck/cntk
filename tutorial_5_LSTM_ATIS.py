@@ -34,3 +34,7 @@ def create_model():
 z = create_model()
 print(z.embed.E.shape)
 print(z.classify.b.value)
+
+
+z = create_model()
+print(z(x).embed.E.shape)
