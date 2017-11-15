@@ -28,3 +28,9 @@ def create_model():
             C.layers.Recurrence(C.layers.LSTM(hidden_dim), go_backwards=False),
             C.layers.Dense(num_labels, name='classify')
         ])
+
+
+# peek
+z = create_model()
+print(z.embed.E.shape)
+print(z.classify.b.value)
