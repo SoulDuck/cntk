@@ -208,8 +208,7 @@ def alexnet_train_and_eval(train_data, test_data, num_quantization_bits=32, bloc
 if __name__=='__main__':
 
     parser = argparse.ArgumentParser()
-    data_path  = os.path.join(abs_path, "..", "..", "..", "DataSets", "ImageNet")
-
+    data_path  = os.path.join(abs_path, 'ImageNet' , "ImageNet")
     parser.add_argument('-datadir', '--datadir', help='Data directory where the ImageNet dataset is located', required=False, default=data_path)
     parser.add_argument('-outputdir', '--outputdir', help='Output directory for checkpoints and models', required=False, default=None)
     parser.add_argument('-logdir', '--logdir', help='Log file', required=False, default=None)
