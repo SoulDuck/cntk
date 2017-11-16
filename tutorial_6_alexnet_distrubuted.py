@@ -229,6 +229,7 @@ if __name__=='__main__':
         log_dir = args['logdir']
     if args['device'] is not None:
         # Setting one worker on GPU and one worker on CPU. Otherwise memory consumption is too high for a single GPU.
+        print 'Communicator.rank() : ',Communicator.rank()
         if Communicator.rank() == 0:
             C.device.try_set_default_device(C.device.gpu(args['device']))
         else:

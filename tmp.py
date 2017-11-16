@@ -13,3 +13,4 @@ print s.ix[:3]
 N , M = 5,5
 X,Y=input_sine.generate_data(np.sin  , np.linspace(0,100,10000 , dtype=np.float32) ,  N, M )
 
+print [0.01]*25 + [0.001]*25 + [0.0001]*25 + [0.00001]*25 + [0.000001]
