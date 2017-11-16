@@ -172,7 +172,7 @@ def convnet_cifar10_dataaug(train_data, test_data, mean_data, minibatch_size=64,
 
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
-    data_path  = os.path.join(abs_path, "..", "..", "..", "DataSets", "CIFAR-10")
+    data_path  = os.path.join(abs_path, "data", "CIFAR-10")
 
     parser.add_argument('-datadir', '--datadir', help='Data directory where the CIFAR dataset is located',
                         required=False, default=data_path)
