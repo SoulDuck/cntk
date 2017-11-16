@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ConvNetLRN_CIFAR10_DataAug.py" />
+    <list default="true" id="444ced4c-eb30-4fa9-9bce-73325163823b" name="Default" comment="tutorial_6_Alexnet_distributed and ImageNet DataSet">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ConvNetLRN_CIFAR10_DataAug.py" afterPath="$PROJECT_DIR$/ConvNet_CIFAR10_DataAug.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,13 +111,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConvNetLRN_CIFAR10_DataAug.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ConvNetLRN_CIFAR10_DataAug.py">
+      <file leaf-file-name="ConvNet_CIFAR10_DataAug.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ConvNet_CIFAR10_DataAug.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="164" column="57" lean-forward="false" selection-start-line="164" selection-start-column="57" selection-end-line="164" selection-end-column="57" />
+            <state relative-caret-position="199">
+              <caret line="214" column="0" lean-forward="true" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
               <folding>
-                <element signature="e#237#274#0" expanded="true" />
+                <element signature="e#317#354#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -430,13 +430,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
-    </task>
-    <task id="LOCAL-00062" summary="tutorial_4_solar_csv">
-      <created>1510555303862</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1510555303862</updated>
     </task>
     <task id="LOCAL-00063" summary="tutorial_4_solar_csv">
       <created>1510571299402</created>
@@ -774,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510822432912</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="tutorial_6_Alexnet_distributed and ImageNet DataSet">
+      <created>1510823504556</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1510823504556</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1202,12 +1202,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConvNetLRN_CIFAR10_DataAug.py">
+    <entry file="file://$PROJECT_DIR$/ConvNet_CIFAR10_DataAug.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="164" column="57" lean-forward="false" selection-start-line="164" selection-start-column="57" selection-end-line="164" selection-end-column="57" />
+        <state relative-caret-position="199">
+          <caret line="214" column="0" lean-forward="true" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
           <folding>
-            <element signature="e#237#274#0" expanded="true" />
+            <element signature="e#317#354#0" expanded="true" />
           </folding>
         </state>
       </provider>
