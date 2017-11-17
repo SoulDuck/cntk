@@ -100,8 +100,10 @@ def create_trainer(network, epoch_size, num_quantization_bits, block_size, warm_
                                             l2_regularization_weight=l2_reg_weight)
 
     if block_size != None:
+        print ('learner' , 'block_momentum')
         parameter_learner = C.train.distributed.block_momentum_distributed_learner(local_learner, block_size=block_size)
     else:
+        print('learner', '1 bit sgd')
         parameter_learner = C.train.distributed.data_parallel_distributed_learner(local_learner,
                                                                                   num_quantization_bits=num_quantization_bits,
                                                                                   distributed_after=warm_up)
@@ -227,4 +229,5 @@ if __name__=='__main__':
                             profiling=args['profile'],
                             tensorboard_logdir=args['tensorboard_logdir'])
     # Must call MPI finalize when process exit without exceptions
+
     C.train.distributed.Communicator.finalize()
