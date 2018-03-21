@@ -62,8 +62,8 @@
       <file leaf-file-name="tutorial_7_convnet_cifar10.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial_7_convnet_cifar10.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="142" column="43" lean-forward="false" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
+            <state relative-caret-position="258">
+              <caret line="192" column="51" lean-forward="false" selection-start-line="192" selection-start-column="51" selection-end-line="192" selection-end-column="51" />
               <folding>
                 <element signature="e#237#274#0" expanded="true" />
               </folding>
@@ -447,13 +447,6 @@
       <option name="presentableId" value="Default" />
       <updated>1507780735189</updated>
     </task>
-    <task id="LOCAL-00069" summary="tutorial_4_solar_csv">
-      <created>1510637183767</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1510637183767</updated>
-    </task>
     <task id="LOCAL-00070" summary="tutorial_4_solar_csv">
       <created>1510637751573</created>
       <option name="number" value="00070" />
@@ -790,7 +783,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521628715542</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="tutorial_6_Alexnet_distributed and ImageNet DataSet">
+      <created>1521643762600</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1521643762600</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1163,8 +1163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial_7_convnet_cifar10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="142" column="43" lean-forward="false" selection-start-line="142" selection-start-column="43" selection-end-line="142" selection-end-column="43" />
+        <state relative-caret-position="258">
+          <caret line="192" column="51" lean-forward="false" selection-start-line="192" selection-start-column="51" selection-end-line="192" selection-end-column="51" />
           <folding>
             <element signature="e#237#274#0" expanded="true" />
           </folding>

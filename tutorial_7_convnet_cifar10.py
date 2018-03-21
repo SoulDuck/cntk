@@ -190,7 +190,7 @@ if __name__=='__main__':
     parser.add_argument('-a', '--distributed_after', help='Number of samples to train with before running distributed', type=int,
                         required=False, default='0')
     parser.add_argument('-b', '--block_samples', type=int, help="Number of samples per block for block momentum (BM) distributed learner (if 0 BM learner is not used)",
-                        required=False, default=None)
+                        required=False, default=120)
     parser.add_argument('-r', '--restart', help='Indicating whether to restart from scratch (instead of restart from checkpoint file by default)',
                         action='store_true')
     parser.add_argument('-device', '--device', type=int, help="Force to run the script on a specified device",
