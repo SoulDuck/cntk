@@ -148,7 +148,7 @@ def convnet_cifar10_dataaug(train_data, test_data, mean_data, minibatch_size=64,
 
     distributed_sync_report_freq = None
     if block_size is not None:
-        distributed_sync_report_freq = 1
+        distributed_sync_report_freq = 1000
 
     progress_writers = [C.logging.ProgressPrinter(
         freq=num_mbs_per_log,
